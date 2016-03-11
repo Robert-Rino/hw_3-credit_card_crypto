@@ -26,9 +26,7 @@ module LuhnValidator
 
   # multiply 2 and return digit sum
   def dig_sum(numberOfEvenIndex)
-    # puts "input is #{numberOfEvenIndex}"
     result = (numberOfEvenIndex * 2).to_s.chars.map(&:to_i).inject(:+)
-    # puts "output is #{result}"
     result
   end
 end
